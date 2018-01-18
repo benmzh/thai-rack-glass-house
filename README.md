@@ -1,2 +1,2 @@
 # thai-rack-glass-house
-Code and assets for the Thai Rack Glass House website
+All code related to the new website for Thai Rack Glass House

@@ -1,0 +1,176 @@
+.trgh-menu-container {
+  background-color: $trgh-background-colour-lighter;
+  color: $trgh-text-colour-darker;
+  flex-direction: row;
+}
+
+.trgh-menu-introduction-container {
+  padding: 10px;
+}
+
+.trgh-menu-introduction-header {
+  font-size: 2rem;
+  font-family: 'TexGyreChorusMediumItalic';
+}
+
+.trgh-menu-introduction-header-top {
+  margin-bottom: 0;
+}
+
+.trgh-menu-introduction-header-bottom {
+  text-align: right;
+}
+
+.trgh-menu-introduction-header-thai {
+  font-size: 1.5rem;
+}
+
+.trgh-menu-introduction-container p {
+
+}
+
+.trgh-menu-meal-container {
+  background-color: $trgh-background-colour-lighter;
+  color: $trgh-text-colour-darker;
+  padding-bottom: 1px;
+  transition: transform 0.3s;
+}
+
+.trgh-menu-section-heading-container {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.trgh-menu-section-heading-container h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.trgh-menu-section-heading-container h3 {
+  font-family: 'TexGyreChorusMediumItalic';
+  font-size: 1.5rem;
+}
+
+.trgh-expandable-arrow {
+  fill: $trgh-text-colour-darker;
+  stroke-width: 0;
+  transition: transform 0.3s;
+}
+
+h2 .trgh-expandable-arrow {
+  transform: translate(0, -2px);
+}
+
+#special-set-menu-show-hide-p,
+#soups-show-hide-p,
+#thai-curries-show-hide-p,
+#meat-poultry-show-hide-p,
+#vegetarian-starters-show-hide-p {
+  display: none;
+}
+
+.trgh-menu-item-container {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.trgh-menu-item-container:target {
+  display: flex;
+}
+
+.trgh-menu-item {
+  margin: 10px;
+  width: 300px;
+}
+
+.trgh-menu-item-top-line-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trgh-menu-item-name h4 {
+  font-weight: 700;
+}
+
+.trgh-menu-item-name-clarification {
+  font-weight: normal;
+}
+
+.trgh-menu-item-spiciness-icon {
+  height: 14px;
+  width: auto;
+  margin: 0 3px;
+}
+
+.trgh-menu-item-spiciness-icon-mild {
+  transform: translate(0,2px);
+}
+
+.trgh-menu-item-spiciness-icon-medium {
+  transform: translate(0,1px);
+}
+
+.trgh-menu-item-spiciness-icon-hot {
+
+}
+
+.trgh-menu-item-vegetarian-icon {
+
+}
+
+.trgh-menu-item-nuts-icon {
+
+}
+
+.trgh-menu-item-price-container {
+  width: 70px;
+  text-align: right;
+}
+
+.trgh-menu-item-description-container p, .trgh-menu-item-description-container ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.trgh-menu-spiciness-key-container {
+  background-color: $trgh-background-colour-lighter;
+  color: $trgh-text-colour-darker;
+}
+
+.trgh-menu-spiciness-key, .trgh-menu-dietary-key {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.trgh-menu-spiciness-key-item, .trgh-menu-dietary-key-item {
+  margin: 0 10px;
+}
+
+.trgh-menu-dietary-key-item-text {
+  color: white;
+}
+
+.trgh-menu-dietary-key-item-text-vegetarian {
+  color: green;
+}
+
+.trgh-menu-dietary-info {
+
+}
+
+.trgh-menu-generic-info-container {
+  background-color: $trgh-background-colour-lighter;
+  color: $trgh-text-colour-darker;
+}
+
+//Styles relating to on page functionality below
+
+.trgh-menu-clickable-title {
+  cursor: pointer;
+  transition: color 0.3s;
+}

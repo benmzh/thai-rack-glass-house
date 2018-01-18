@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <%= partial "partials/head" %>
+  <body>
+    <%= partial "partials/sticky-menu" %>
+    <div class="trgh-content-container">
+      <%= yield %>
+    </div>
+    <%= javascript_include_tag ("all.js") %>
+  </body>
+</html>

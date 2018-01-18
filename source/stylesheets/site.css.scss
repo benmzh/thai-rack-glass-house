@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+@import "utils/colours";
+@import "utils/normalize";
+
+@import "partials/sticky-menu";
+@import "partials/menu";
+@import "partials/success-failure";
+
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  background-color: $trgh-background-colour-darker;
+  @media (min-width: 800px) {
+    background-color: $trgh-background-colour-even-darker;
+  }
+}
+
+@font-face {
+  font-family: 'TexGyreChorusMediumItalic';
+  src: url('../fonts/texgyrechorus-mediumitalic.otf');
+}
+
+@font-face {
+    font-family: 'NotoSansThai-Regular';
+    src: url('../fonts/NotoSansThai-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-family: 'TexGyreChorusMediumItalic';
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h1.trgh-hero-text {
+  font-size: 3rem;
+  text-shadow: 0px 0px 4px $trgh-shadow-colour;
+  @media (min-width: 600px) {
+    font-size: 4.5rem;
+  }
+  @media (min-width: 900px) {
+    font-size: 6rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.trgh-section-darker h2 {
+  text-shadow: 0px 0px 2px $trgh-shadow-colour;
+}
+
+.trgh-text-bold {
+  font-weight: 700;
+}
+
+.trgh-text-centre {
+  text-align: center;
+}
+
+p.trgh-text-reduced-margin-bottom {
+  margin-bottom: 5px;
+}
+
+p.trgh-text-no-margin-top {
+  margin-top: 0;
+}
+
+.trgh-text-thai {
+  font-family: 'NotoSansThai-Regular';
+}
+
+span.trgh-link-text {
+  font-weight: 700;
+}
+
+//Text styles end here
+
+.trgh-centre {
+  text-align: center;
+}
+
+.trgh-generic-padded-container {
+  padding: 10px;
+}
+
+.trgh-decoration-corner {
+  position: absolute;
+  height: 100px;
+  width: auto;
+}
+
+.trgh-decoration-corner-top-left {
+  top: 0;
+  left: 0;
+}
+
+.trgh-decoration-corner-top-right {
+  top: 0;
+  right: 0;
+}
+
+.trgh-decoration-corner-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.trgh-decoration-corner-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.trgh-section-darker {
+  position: relative;
+  background-color: $trgh-background-colour-darker;
+  color: $trgh-text-colour-lighter;
+  padding: 10px 10px 90px 10px;
+}
+
+.trgh-section-lighter {
+  position: relative;
+  background-color: $trgh-background-colour-lighter;
+  color: $trgh-text-colour-darker;
+  padding: 10px 10px 90px 10px;
+}
+
+.trgh-section-header {
+  text-align: center;
+  padding-top: 42px;
+}
+
+.trgh-logo-section-top {
+  height: 2rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trgh-about-section-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.trgh-about-section-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trgh-thumbnail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.trgh-thumbnail {
+  display: none;
+  @media (min-width: 1150px) {
+    display: block;
+    width: 160px;
+    height: 160px;
+  }
+  margin-right: 20px;
+}
+
+.trgh-thumbnail:last-of-type {
+  margin: 0px;
+}
+
+//Generic styles end here
+
+.trgh-thumbnail-centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  @media (min-width: 1150px) {
+    margin-left: unset;
+    margin-right: 20px;
+    margin-top: 0;
+    height: 160px;
+    width: 160px;
+  }
+}
+
+.trgh-content-container {
+  margin: 46px 0;
+  @media (min-width: 600px) {
+    margin-bottom: 0px;
+  }
+  @media (min-width: 800px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 80%;
+  }
+  overflow: hidden;
+}
+
+.trgh-hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 400px;
+  @media (min-width: 600px) {
+    min-height: 480px;
+  }
+  @media (min-width: 900px) {
+    min-height: 650px;
+  }
+  background-color: $trgh-background-colour-darker;
+  color: $trgh-text-colour-lighter;
+  text-align: center;
+}
+
+.trgh-hero-logo {
+  height: 106px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/trgh-logo-small.png');
+  background-size: contain;
+  @media (min-width: 600px) {
+    height: 158px;
+    width: 150px;
+    background-image: url('../images/trgh-logo-medium.png');
+  }
+  @media (min-width: 900px) {
+    height: 211px;
+    width: 200px;
+    background-image: url('../images/trgh-logo-large.png');
+  }
+}
+
+.trgh-google-map {
+  width: 100%;
+  height: 300px;
+  @media (min-width: 400px) {
+    height: 400px;
+  }
+  @media (min-width: 500px) {
+    height: 500px;
+  }
+  border: 0;
+  margin-top: 20px;
+}
+
+.trgh-footer {
+  background-color: $trgh-background-colour-darker;
+  color: $trgh-text-colour-lighter;
+  text-align: center;
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.trgh-footer p {
+  font-size: 0.7rem;
+}
+
+.ww-logo {
+  height: 11px;
+}
+
+//Booking form styles vvv
+.trgh-booking-form {
+  margin-top: 1em;
+  width: 300px;
+  @media (min-width: 520px) {
+    width: 500px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trgh-booking-form input, .trgh-booking-form textarea {
+  font: inherit;
+  padding: 0 10px;
+}
+
+.trgh-booking-form textarea {
+  padding: 10px;
+}
+
+.trgh-booking-form select {
+  font: inherit;
+  padding: 0 15px 0 5px;
+}
+
+.trgh-contact-item {
+  margin-bottom: 10px;
+  width: 280px;
+  @media (min-width: 520px) {
+    width: 480px;
+  }
+}
+
+.trgh-contact-item-half-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trgh-booking-form-item {
+  height: 30px;
+  border: none;
+  width: 100%;
+}
+
+#time.trgh-booking-form-item, #guests.trgh-booking-form-item {
+  width: 115px;
+  @media (min-width: 520px) {
+    width: 215px;
+  }
+}
+
+#time.trgh-booking-form-item {
+  margin-right: 30px;
+}
+
+select.trgh-booking-form-item {
+  width: 300px;
+  @media (min-width: 520px) {
+    width: 500px;
+  }
+}
+
+textarea.trgh-booking-form-item {
+  height: 70px;
+}
+
+.trgh-contact-item-centred {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+}
+
+.trgh-contact-button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $trgh-text-colour-lighter;
+  color: $trgh-text-colour-lighter;
+  background-color: $trgh-background-colour-darker;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.trgh-contact-button:hover {
+  color: $trgh-background-colour-darker;
+  background-color: $trgh-text-colour-lighter;
+}
+
+//Booking form styles ^^^

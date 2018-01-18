@@ -1,0 +1,114 @@
+<div class="tt-sticky-container">
+  <div class="tt-sticky-top-left">
+    <div class="tt-sticky-logo tt-sticky-menu-item">
+      <a href="/">
+        <img class="tt-swirl-icon-large" src="../images/trgh-logo-small.png" alt="Thai Rack Glass House Logo">
+      </a>
+    </div>
+    <div class="tt-sticky-hamburger tt-sticky-menu-item">
+      <div id="trgh-hamburger-icon-link">
+        <svg width="50" height="30">
+          <line x1="23" y1="7" x2="47" y2="7" style="stroke:#FFE0B7; stroke-width:3; stroke-linecap:round"/>
+          <line x1="23" y1="15" x2="47" y2="15" style="stroke:#FFE0B7; stroke-width:3; stroke-linecap:round"/>
+          <line x1="23" y1="23" x2="47" y2="23" style="stroke:#FFE0B7; stroke-width:3; stroke-linecap:round"/>
+        </svg>
+      </div>
+      <div id="trgh-close-icon-link">
+        <svg width="50" height="30">
+          <line x1="23" y1="7" x2="47" y2="23" style="stroke:#FFE0B7; stroke-width:3; stroke-linecap:round"/>
+          <line x1="23" y1="23" x2="47" y2="7" style="stroke:#FFE0B7; stroke-width:3; stroke-linecap:round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="tt-sticky-expanded-menu" id="tt-sticky-expanded-menu">
+      <div class="tt-sticky-expanded-menu-arrow">
+        <svg class="tt-arrow-black" height="10" width="20">
+          <polygon points="10,0 10,10 20,5" />
+        </svg>
+      </div>
+      <div class="tt-sticky-expanded-menu-text">
+        <a href="/#about-us">
+          <p class="tt-sticky-type">About Us</p>
+        </a>
+      </div>
+      <br>
+      <div class="tt-sticky-expanded-menu-arrow">
+        <svg class="tt-arrow-black" height="10" width="20">
+          <polygon points="10,0 10,10 20,5" />
+        </svg>
+      </div>
+      <div class="tt-sticky-expanded-menu-text">
+        <a href="/#book">
+          <p class="tt-sticky-type">Book Online</p>
+        </a>
+      </div>
+      <br>
+      <div class="tt-sticky-expanded-menu-arrow">
+        <svg class="tt-arrow-black" height="10" width="20">
+          <polygon points="10,0 10,10 20,5" />
+        </svg>
+      </div>
+      <div class="tt-sticky-expanded-menu-text">
+        <a href="/#find-us">
+          <p class="tt-sticky-type">Find Us</p>
+        </a>
+      </div>
+      <br>
+      <div class="tt-sticky-expanded-menu-arrow">
+        <svg class="tt-arrow-black" height="10" width="20">
+          <polygon points="10,0 10,10 20,5" />
+        </svg>
+      </div>
+      <div class="tt-sticky-expanded-menu-text">
+        <a href="/#opening-hours">
+          <p class="tt-sticky-type">Opening Hours</p>
+        </a>
+      </div>
+      <br>
+      <div class="tt-sticky-expanded-menu-arrow">
+        <svg class="tt-arrow-black" height="10" width="20">
+          <polygon points="10,0 10,10 20,5" />
+        </svg>
+      </div>
+      <div class="tt-sticky-expanded-menu-text">
+        <a href="/#contact">
+          <p class="tt-sticky-type">Contact Us</p>
+        </a>
+      </div>
+    </div>
+    <div class="tt-sticky-phone tt-sticky-menu-item">
+      <a href="tel:01763250488" title="Call Thai Rack Glass House">
+        <p class="tt-sticky-type">01763 250 488</p>
+      </a>
+    </div>
+  </div>
+  <div class="tt-sticky-bottom-right">
+    <% if current_page.path.include? 'menu' %>
+      <div class="tt-sticky-our-menu tt-sticky-menu-item" id="dinner-menu-selector-container">
+        <a href="#dinner-menu">
+          <div class="trgh-menu-selector-surround" id="dinner-menu-selector">
+            <p class="tt-sticky-type">Dinner</p>
+          </div>
+        </a>
+      </div>
+      <div class="tt-sticky-our-menu tt-sticky-menu-item" id="lunch-menu-selector-container">
+        <a href="#lunch-menu">
+          <div class="trgh-menu-selector-surround" id="lunch-menu-selector">
+            <p class="tt-sticky-type">Lunch</p>
+          </div>
+        </a>
+      </div>
+    <% else %>
+      <div class="tt-sticky-our-menu tt-sticky-menu-item">
+        <a href="menu.html">
+          <p class="tt-sticky-type">Menu</p>
+        </a>
+      </div>
+    <% end %>
+    <div class="tt-sticky-book tt-sticky-menu-item">
+      <a href="/#book">
+        <p class="tt-sticky-type tt-sticky-spacer">Book Online</p>
+      </a>
+    </div>
+  </div>
+</div>

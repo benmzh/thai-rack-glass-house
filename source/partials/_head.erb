@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title><%= current_page.data.title %></title>
+  <% if current_page.path.include? 'menu' %>
+    <meta name="description" content="Our dinner and lunch menus - Fantastic ingredients crafted into superb Thai dishes.">
+  <% else %>
+    <meta name="description" content="Fine Thai dining at out beautiful restaurant in the heart Royston.">
+  <% end %>
+  <%= stylesheet_link_tag "site" %>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83524777-30"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-83524777-30');
+  </script>
+  <meta name="google-site-verification" content="ph8Fd-1-Ad8n8THhRhlreByE_gT-oNnXr-k8WnqeXbM" />
+</head>

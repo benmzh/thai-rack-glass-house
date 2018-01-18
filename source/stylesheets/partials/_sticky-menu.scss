@@ -1,0 +1,273 @@
+p.tt-sticky-type {
+  color: $trgh-text-colour-lighter;
+}
+
+.tt-sticky-menu-item {
+  position: fixed;
+  height: 30px;
+  width: 100px;
+  padding: 8px 20px;
+  background-color: $trgh-background-colour-darker;
+  line-height: 0px;
+}
+
+.tt-sticky-logo {
+  display: none;
+}
+
+img.tt-swirl-icon-large {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+#trgh-hamburger-icon-link, #trgh-close-icon-link {
+  cursor: pointer;
+}
+
+#trgh-close-icon-link {
+  display: none;
+}
+
+.trgh-menu-selector-surround {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  text-align: center;
+  height: 27px;
+  @media (min-width: 800px) {
+    height: auto;
+  }
+}
+
+.trgh-menu-selector-surround p.tt-sticky-type {
+  margin-top: 13px;
+  @media (min-width: 800px) {
+    margin-top: 15px;
+  }
+}
+
+.trgh-menu-selector-surround:hover {
+  background-color: $trgh-background-colour-lighter;
+  cursor: pointer;
+}
+
+.tt-sticky-hamburger {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 8px 0px;
+}
+
+.tt-sticky-expanded-menu {
+  display: none;
+  position: fixed;
+  top: 46px;
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  padding: 8px 0;
+  background-color: $trgh-background-colour-darker;
+  box-shadow: 0px -7px $trgh-background-colour-darker, 0px 0px 5px $trgh-colour-black;
+}
+
+.tt-sticky-expanded-menu div {
+  display: inline-block;
+}
+
+.tt-arrow-black {
+  fill: $trgh-text-colour-lighter;
+  stroke-width: 0;
+}
+
+.tt-sticky-phone {
+  z-index: 1;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  box-shadow: 0px 0px 5px $trgh-colour-black;
+}
+
+.tt-sticky-our-menu {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.trgh-menu-selector-surround {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $trgh-text-colour-lighter;
+  width: 100px;
+}
+
+#dinner-menu-selector-container {
+  display: none;
+}
+
+.tt-sticky-book {
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  box-shadow: 0px 0px 5px $trgh-colour-black;
+}
+
+@media (min-width: 600px) {
+
+  p.tt-sticky-spacer {
+    padding-right: 20px;
+  }
+
+  .tt-sticky-container {
+    position: fixed;
+    z-index: 3;
+    height: 46px;
+    box-shadow: 0px 0px 5px $trgh-colour-black;
+    width: 100%;
+    top: 0;
+  }
+
+  .tt-sticky-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+
+  .tt-sticky-bottom-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+  }
+
+  .tt-sticky-menu-item {
+    position: relative;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .tt-sticky-hamburger {
+    float: left;
+    text-align: left;
+    width: 30%;
+  }
+
+  .tt-sticky-phone {
+    float: right;
+    width: 70%;
+    box-shadow: none;
+  }
+
+  .tt-sticky-our-menu {
+    float: left;
+  }
+
+  .tt-sticky-book {
+    float: right;
+    text-align: right;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 800px) {
+
+  p.tt-sticky-spacer {
+    padding-right: 0px;
+  }
+
+  .tt-sticky-container {
+    background-color: $trgh-background-colour-darker;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 20%;
+    background-color: $trgh-background-colour-even-darker;
+    box-shadow: 0px 0px 5px $trgh-colour-black;
+  }
+
+  .tt-sticky-top-left {
+    position: relative;
+    height: 437px;
+    width: 100%;
+  }
+
+  .tt-sticky-bottom-right {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  .tt-sticky-menu-item {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background-color: $trgh-background-colour-even-darker;
+  }
+
+  .tt-sticky-logo {
+    display: block;
+  }
+
+  .tt-sticky-hamburger {
+    display: none;
+  }
+
+  .tt-sticky-expanded-menu {
+    display: block;
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: $trgh-background-colour-even-darker;
+  }
+
+  .tt-sticky-expanded-menu svg {
+    display: none;
+  }
+
+  .tt-sticky-phone {
+    display: none;
+  }
+
+  .tt-sticky-our-menu p {
+    color: $trgh-text-colour-lighter;
+  }
+
+  .tt-sticky-book {
+    display: none;
+    box-shadow: none;
+  }
+
+}
+
+@media (min-width: 800px) and (max-height: 500px) {
+
+  .tt-sticky-container {
+    position: absolute;
+    height: 100%;
+    display: block;
+    box-shadow: none;
+  }
+
+  .tt-sticky-logo {
+    padding-top: 20px;
+  }
+
+  .tt-sticky-bottom-right {
+    margin-top: 10px;
+  }
+
+}
